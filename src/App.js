@@ -22,11 +22,12 @@ function App() {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 5000);
+    }, 3000);
     return () => {
       clearInterval(slider);
     };
   }, [index]);
+
   return (
     <section className="section">
       <div className='title'>
